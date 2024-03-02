@@ -1,5 +1,7 @@
 # PHP基础
 
+https://www.bilibili.com/video/BV1H44y1N7qR?p=8&spm_id_from=pageDriver&vd_source=c37728f2b9891208b9908ab937dbade2
+
 ### 客户端与服务器端
 
 客户端：用户所使用的平台，如电脑、手机等
@@ -107,6 +109,8 @@ echo 'hello world'#以上三个输出相同
 echo '小明说:'.$str."我说$str" #用.拼接，最佳方法可都放双引号中
 
 ### 定义数组
+
+
 
 ### 数组遍历
 
