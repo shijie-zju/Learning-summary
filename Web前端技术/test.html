@@ -7,31 +7,121 @@
         <!--网页描述-->
         <meta name="description" content="这是一个学习动手笔记"/>
         <!--自动刷新，时间设6s，加入"6;url=http://www.baidu.com"跳转至百度-->
-        <meta http-equiv="refresh" content="6"/>
+        <meta http-equiv="refresh" content="30"/>
         <title>这是地址栏显示的标题</title>
     </head>
     <body>
-        <div>
+        <div id="start">
             <h2>hr是标题</h2>
             <p>P标签是页面的段落标签,会自动换行。<br/>br标签换行使用,或者使用p元素</p>
             <strong>strong标签或b是粗体文本</strong><br/>
             <em>em是斜体标签,sup上标标签是<sup>上标</sup>,sub下标是<sub>下标</sub></em>
             <p><s>s是中划线效果</s><u>u下划线效果</u></p>
+            <p>div标签划分区域,hr/标签水平线</p>
             <hr/>     
         </div>
         <div>
-            <p>div标签划分区域,hr/标签水平线</p>
-            <p>一般标签：内部可插其他文字</p>
-            <p>自闭合标签：<  / >的结构</p>
-            <hr/>
             <h2>归纳</h2>
+            <p>一般标签：内部可插其他文字</p>
+            <p>自闭合标签：< &nbsp;&nbsp; / >的结构,如hr换行,img,input 等</p>
             <p>在浏览器中独占一行的标签有:p,hr,div等</p>
             <p>块元素(独占一行,块内可含其他元素),行元素(与其他元素在同一行，不能容纳块元素只能容纳行元素)</p>
             <p>&nbsp;&nbsp;&nbsp;三个& nbsp;对应一个空格</p>
             <hr/>
         </div>
-        <h2>列表</h2>
-        <p></p>
+        <div>
+            <h2>列表</h2>
+            <ol type="1">
+                <li>ol是有序列表</li>
+                <li>li是列表项</li>
+                <li>ol后tpye可以选数字还是字母</li>
+            </ol>
+            <ul type="circle">
+                <li>li无序列表</li>
+                <li>type可以选前面的形状</li>
+            </ul>
+            <dl>
+                <dt>dl列表</dt>
+                <dd>dt是名称,dd是对dt的描述</dd>
+            </dl>
+            <hr/>
+            
+            <h2>表格</h2>
+            <table>
+                <caption>caption是首行表格标题,thead表头行,tbody表身,tfoot最后统计行</caption>
+                <thead>
+                    <tr>
+                        <th>第一个tr内</th>
+                        <th>应该都是</th>
+                        <th>表头th标签</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>table是一个表格</td>
+                        <td>再加边框需要css</td>
+                        <td rowspan="2">rowspan跨行</td>
+                    </tr>
+                    <tr>
+                        <td>行是tr在外部</td>
+                        <td>单元格是td在tr内</td> 
+                    </tr>
+                    <tr>
+                        <td colspan="3">colspan跨列,这里是合并三列</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>超链接：外部链接，大多用a</h2>
+            <img scr="../pictures/gitteam.png" alt="找不到图时显示" title="鼠标移上去的提示名称"/>
+            <a href="http://www.baidu.com">百度网站</a>
+            <a target="_blank">
+                <img src="../pictures/gitteam.png" alt="图片也能超链接"/>
+            </a>
+            <p>内部链接：另一个页面</p>
+            <a href="笔记.md">页面跳转</a><br/>
+            <p>锚点链接，指向当前页面设id的div</p>
+            <a href="#start">回到开始</a>
+
+            <h2>表单form:向交互迈进,与服务器交互必须在form内</h2>
+            <p>form属性：name起名，method设置提交方式post，action提交的地址，target为窗口打开方式，enctype
+            <form method="post">
+                姓名：<input type="text" size=32 value="默认" /><br/>
+                密码：<input type="password" size="10" maxlength="5"/><br/>          
+                单选框同name：<input type="radio" name="gender" value="男" checked/>男的
+                <input type="radio" name="gender" value="男" />女的
+                <br/>
+                单选框不同name：<input type="radio" name="gender1" value="男"/>男的
+                <input type="radio" name="gender2" value="男" />女的
+                <br/>
+                复选框可选多项：
+                <input type="checkbox" name="fruit" value="苹果"/>爱吃苹果
+                <input type="checkbox" name="fruit" value="香蕉"/>爱吃香蕉
+                <br/>
+                按钮：
+                普通按钮button：<input type="button" value="按钮"/>
+                提交按钮submit:<input type="submit" value="按钮"/><br/>
+                重置按钮reset只能清除当前form中的:<input type="reset" value="重置按钮"/>
+                <input type="text"/>
+            </form>
+            <form>
+                <p>文件上传表单</p>
+                <input type="file" />
+                <br/>
+                多行文本框：<br/>
+                    <textarea rows="5" cols="60">可设置行列数</textarea>
+                <p>下拉列表select</p>
+                    <select size="3" multiple>
+                        <option value="a" selected>HTML</option>
+                        <option value="b" selected>CSS</option>
+                        <option value="c">javascript</option>
+                    </select>
+                <p>内嵌框架iframe:页面中插入页面</p>
+                <iframe src="http://www.baidu.com" width="200" height="150"></iframe>
+            </form>
+                
+        </div>
+
     </body>
 </html>
 
