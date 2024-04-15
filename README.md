@@ -8,7 +8,6 @@ Email：1724926804@qq.com
 
 ## **目录如下，会实时更新：**
 
-![Alt text](../Learning-summary/MATH/notes/way.png)
 
 ### MATH ！！！
 
