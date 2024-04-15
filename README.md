@@ -8,11 +8,11 @@ Email：1724926804@qq.com
 
 ## **目录如下，会实时更新：**
 
+![Alt text](../Learning-summary/MATH/notes/way.png)
+
 ### MATH ！！！
 
 数学┭┮﹏┭┮
-
-<img src="../Learning-summary/MATH/notes/way.png" alt="Alt text" style="width: 300px; height: 150px;">
 
 0. 课程基础
 
